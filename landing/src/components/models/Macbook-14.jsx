@@ -23,13 +23,13 @@ export default function MacbookModel14(props) {
 
   useEffect(() => {
     scene.traverse((child) => {
-      if (child.mesh) {
+      if (child.isMesh) {
         if (!noChangeParts.includes(child.name)) {
           child.material.color = new THREE.Color(color);
         }
       }
     });
-  }, [color]);
+  }, [color, scene]);
   return (
     <group {...props} dispose={null}>
       <mesh
