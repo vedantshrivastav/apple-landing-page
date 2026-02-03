@@ -8,6 +8,7 @@ import { gsap } from "gsap";
 import Performance from "./components/Performance";
 import Features from "./components/Features";
 import Highlights from "./components/Highlights";
+import Footer from "./components/Footer";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 function App() {
   // const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function App() {
       <Performance />
       <Features />
       <Highlights />
+      <Footer />
     </div>
   );
 }
