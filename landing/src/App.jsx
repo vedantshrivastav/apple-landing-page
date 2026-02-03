@@ -7,6 +7,7 @@ import Showcase from "./components/Showcase";
 import { gsap } from "gsap";
 import Performance from "./components/Performance";
 import Features from "./components/Features";
+import Highlights from "./components/Highlights";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 function App() {
   // const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
       <Showcase />
       <Performance />
       <Features />
+      <Highlights />
     </div>
   );
 }
